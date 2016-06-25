@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="350.0" minWidth="300.0" prefHeight="350.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.Fornax.ui.HomeController">
+	<children>
+		<ScrollPane fx:id="contentScrollPane" fitToWidth="true" hbarPolicy="NEVER" layoutX="140.0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		</ScrollPane>
+		<VBox prefHeight="110.0" prefWidth="150.0" spacing="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Button onAction="#btnUploads" prefWidth="140.0" text="Upload History" VBox.vgrow="ALWAYS">
+					<padding>
+						<Insets left="10.0" right="10.0" />
+					</padding>
+				</Button>
+				<Button onAction="#btnSettings" prefWidth="140.0" text="Settings">
+					<padding>
+						<Insets left="10.0" right="10.0" />
+					</padding>
+				</Button>
+				<Button onAction="#btnInstructions" prefWidth="140.0" text="Instructions">
+					<padding>
+						<Insets left="10.0" right="10.0" />
+					</padding>
+				</Button>
+				<Button onAction="#btnShutdown" prefWidth="140.0" text="Exit PixelDrain">
+					<padding>
+						<Insets left="10.0" right="10.0" />
+					</padding>
+				</Button>
+			</children>
+			<padding>
+				<Insets left="5.0" right="5.0" top="5.0" />
+			</padding>
+		</VBox>
+		<VBox prefHeight="180.0" prefWidth="150.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+			<children>
+				<Label maxHeight="40.0" minHeight="40.0" prefHeight="40" text="Drop file down here for instant upload:" wrapText="true" />
+				<ImageView fx:id="dropTexture" fitHeight="140.0" fitWidth="140.0" onDragDropped="#fileOnDragDropped" onDragOver="#fileOnDragOver" pickOnBounds="true" preserveRatio="true" />
+			</children>
+			<padding>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</padding>
+		</VBox>
+	</children>
+</AnchorPane>

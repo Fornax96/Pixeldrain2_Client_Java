@@ -1,0 +1,71 @@
+/* 
+    Created on : Apr 28, 2015, 4:11:10 PM
+    Author     : Fornax
+*/
+
+.root, .pane, .anchor-pane, .scroll-pane, .tool-bar, .flow-pane, .v-box{
+	-fx-background-color: #626262;
+	-fx-background: #626262;
+	-fx-fill: #eee;
+	-fx-text-fill: #eee;
+	-fx-base: #626262;
+	-fx-color: #eee;
+	-fx-text-base-color: #eee;
+	-fx-mark-highlight-color: #9FCF6C; 
+	-fx-mark-color: #9FCF6C;
+}
+
+.scroll-bar{
+	-fx-background-color: #626262;
+}
+.thumb{
+	-fx-background-color: #333;
+}
+
+.text, .text-flow{
+	-fx-background-color: #626262;
+	-fx-text-fill: #eee;
+	-fx-fill: #eee;
+	-fx-color: #eee;
+	-fx-text-base-color: #eee;
+}
+
+.button, .toggle-button, .color-picker, .combo-box, .box, .color-palette{
+	-fx-background-color: #626262;
+	-fx-text-fill: #eee;
+	-fx-fill: #eee;
+	-fx-border-color: #9FCF6C;
+	-fx-border-width: 2px;
+	-fx-border-radius: 0;
+	-fx-border-style: solid;
+}
+
+.list-cell{
+	-fx-background-color: #626262;
+	-fx-text-fill: #eee;
+	-fx-fill: #eee;
+}
+.list-cell:hover{
+	-fx-background-color: #9FCF6C;
+	-fx-text-fill: #eee;
+	-fx-fill: #eee;
+}
+
+.button:hover, .toggle-button:hover, .color-picker:hover{
+	-fx-background-color: #777;
+}
+
+.toggle-button:selected{
+	-fx-background-color: #222;
+}
+
+.historyTile{
+	-fx-spacing: 10;
+	-fx-font-size: 10;
+	-fx-background-color: #444;
+	-fx-border-color: #333;
+	-fx-border-width: 5;
+	-fx-background-insets: 5;
+	-fx-border-insets: 5;
+	-fx-border-radius: 0;
+}

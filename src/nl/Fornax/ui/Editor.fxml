@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.Fornax.ui.EditorController">
+	<children>
+		<ToolBar prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="0.0">
+			<items>
+				<ToggleButton fx:id="btnCrop" mnemonicParsing="false" text="Crop" />
+				<ToggleButton fx:id="btnAddText" mnemonicParsing="false" text="Add Text" />
+				<ToggleButton fx:id="btnDraw" mnemonicParsing="false" text="Draw" />
+				<ColorPicker fx:id="colorPicker"/>
+			</items>
+		</ToolBar>
+		<ToolBar prefHeight="40.0" prefWidth="160.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<items>
+				<Button fx:id="btnZoomOut" mnemonicParsing="false" text="-" />
+				<Button fx:id="btnZoomIn" mnemonicParsing="false" text="+" />
+				<Button fx:id="btnUpload" mnemonicParsing="false" text="Upload" />
+			</items>
+		</ToolBar>
+		<ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+			<content>
+				<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0">
+					<children>
+						<Group fx:id="group">
+							<children>
+								<Canvas fx:id="canvas" height="600.0" width="800.0" />
+							</children>
+						</Group>
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+	</children>
+</AnchorPane>

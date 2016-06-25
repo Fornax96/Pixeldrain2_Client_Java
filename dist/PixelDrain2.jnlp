@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PixelDrain2.jnlp">
+  <information>
+    <title>PixelDrain2</title>
+    <vendor>wim</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path=lib/sqlite4java-392/ -Xmx100M "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PixelDrain2.jar" size="190501" download="eager" />
+    <jar href="lib/JNativeHook.jar" size="189157" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib/httpclient-4.4.1.jar" size="720931" download="eager" />
+    <jar href="lib/httpcore-4.4.1.jar" size="322234" download="eager" />
+    <jar href="lib/httpmime-4.4.1.jar" size="40631" download="eager" />
+    <jar href="lib/jna-4.1.0.jar" size="914597" download="eager" />
+    <jar href="lib/jna-platform-4.1.0.jar" size="1464423" download="eager" />
+    <jar href="lib/json-simple-1.1.1.jar" size="23931" download="eager" />
+    <jar href="lib/sqlite4java.jar" size="132506" download="eager" />
+    <jar href="lib/zip4j_1.3.2.jar" size="131025" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PixelDrain2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="nl.Fornax.PixelDrain"  name="PixelDrain2" />
+  <update check="always"/>
+</jnlp>

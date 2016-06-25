@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'PixelDrain2.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJQaXhlbERyYWluMi5qbmxwIj4KICA8aW5mb3JtYXRpb24+CiAgICA8dGl0bGU+UGl4ZWxEcmFpbjI8L3RpdGxlPgogICAgPHZlbmRvcj53aW08L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD1saWIvc3FsaXRlNGphdmEtMzkyLyAtWG14MTAwTSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IlBpeGVsRHJhaW4yLmphciIgc2l6ZT0iMTkwNTAxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9KTmF0aXZlSG9vay5qYXIiIHNpemU9IjE4OTE1NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvY29tbW9ucy1sb2dnaW5nLTEuMi5qYXIiIHNpemU9IjYxODI5IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9odHRwY2xpZW50LTQuNC4xLmphciIgc2l6ZT0iNzIwOTMxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9odHRwY29yZS00LjQuMS5qYXIiIHNpemU9IjMyMjIzNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvaHR0cG1pbWUtNC40LjEuamFyIiBzaXplPSI0MDYzMSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvam5hLTQuMS4wLmphciIgc2l6ZT0iOTE0NTk3IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qbmEtcGxhdGZvcm0tNC4xLjAuamFyIiBzaXplPSIxNDY0NDIzIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qc29uLXNpbXBsZS0xLjEuMS5qYXIiIHNpemU9IjIzOTMxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9zcWxpdGU0amF2YS5qYXIiIHNpemU9IjEzMjUwNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvemlwNGpfMS4zLjIuamFyIiBzaXplPSIxMzEwMjUiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IlBpeGVsRHJhaW4yIiA+CiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+CiAgPC9hcHBsZXQtZGVzYz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0ibmwuRm9ybmF4LlBpeGVsRHJhaW4iICBuYW1lPSJQaXhlbERyYWluMiIgLz4KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path=lib/sqlite4java-392/ -Xmx100M '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbednl.Fornax() {
+        dtjava.embed(
+            {
+                id : 'nl.Fornax',
+                url : 'PixelDrain2.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJQaXhlbERyYWluMi5qbmxwIj4KICA8aW5mb3JtYXRpb24+CiAgICA8dGl0bGU+UGl4ZWxEcmFpbjI8L3RpdGxlPgogICAgPHZlbmRvcj53aW08L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD1saWIvc3FsaXRlNGphdmEtMzkyLyAtWG14MTAwTSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IlBpeGVsRHJhaW4yLmphciIgc2l6ZT0iMTkwNTAxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9KTmF0aXZlSG9vay5qYXIiIHNpemU9IjE4OTE1NyIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvY29tbW9ucy1sb2dnaW5nLTEuMi5qYXIiIHNpemU9IjYxODI5IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9odHRwY2xpZW50LTQuNC4xLmphciIgc2l6ZT0iNzIwOTMxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9odHRwY29yZS00LjQuMS5qYXIiIHNpemU9IjMyMjIzNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvaHR0cG1pbWUtNC40LjEuamFyIiBzaXplPSI0MDYzMSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvam5hLTQuMS4wLmphciIgc2l6ZT0iOTE0NTk3IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qbmEtcGxhdGZvcm0tNC4xLjAuamFyIiBzaXplPSIxNDY0NDIzIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9qc29uLXNpbXBsZS0xLjEuMS5qYXIiIHNpemU9IjIzOTMxIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9zcWxpdGU0amF2YS5qYXIiIHNpemU9IjEzMjUwNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvemlwNGpfMS4zLjIuamFyIiBzaXplPSIxMzEwMjUiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IlBpeGVsRHJhaW4yIiA+CiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+CiAgPC9hcHBsZXQtZGVzYz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0ibmwuRm9ybmF4LlBpeGVsRHJhaW4iICBuYW1lPSJQaXhlbERyYWluMiIgLz4KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path=lib/sqlite4java-392/ -Xmx100M '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbednl.Fornax);
+</script>
+
+</head><body>
+<h2>Test page for <b>PixelDrain2</b></h2>
+  <b>Webstart:</b> <a href='PixelDrain2.jnlp' onclick="return launchApplication('PixelDrain2.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PixelDrain
+Comment=Instant file and screenshot sharing
+Exec=/bin/pixeldrain
+Icon=/usr/share/doc/pixeldrain/pixeldrain.png
+Terminal=false
+Type=Application
+Categories=Application
+StartupNotify=true
